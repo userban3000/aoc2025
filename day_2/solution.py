@@ -1,0 +1,1 @@
+print(sum(n for q in open("input.in").read().split(",")for a,b in[[*map(int,q.split("-"))]]for n in range(a,b+1)for t in[str(n)]for l in[len(t)]if any(t==t[:i]*(l//i)for i in range(1,l//2+1)if l%i<1)))
